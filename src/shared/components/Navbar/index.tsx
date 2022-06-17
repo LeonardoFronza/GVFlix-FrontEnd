@@ -1,26 +1,25 @@
-import { AppBar, Container, Stack, Toolbar } from "@mui/material";
-import { logo } from "shared/assets";
-
+import {AppBar, Container, Stack, Toolbar} from '@mui/material';
+import {logo} from 'shared/assets';
 
 interface INavBarProps {
-    loginPage?: boolean;
+  loginPage?: boolean;
 }
 
 export const Navbar: React.FC<INavBarProps> = ({loginPage = false}) => {
-    return(
-        <AppBar> 
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <Stack height={80} direction="row" padding={3.5}>
-                        <img src={logo} alt="GVFLIX" />
+  return (
+    <AppBar>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Stack height={80} direction="row" padding={3.5} paddingLeft={1.7}>
+            <img src={logo} alt="GVFLIX" />
 
-                        {loginPage && <div></div>}
-                    </Stack>
-                </Toolbar>
-            </Container>
-        </AppBar>
-    );
-}
+            {loginPage && <div></div>}
+          </Stack>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
+};
 
 /*(Appbar) =  https://mui.com/pt/material-ui/react-app-bar/ 
 
@@ -37,4 +36,4 @@ Estilo da barra superior.
 
 O container centraliza seu conteúdo horizontalmente. É o elemento de leiaute mais básico.
 A largura de um container fluído é limitada pelo valor da propriedade ((maxWidth)).
-*/ 
+*/

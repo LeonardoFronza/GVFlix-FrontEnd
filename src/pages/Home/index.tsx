@@ -1,11 +1,11 @@
-import { Navbar } from "shared/components";
+import {Navbar} from 'shared/components';
 
 const Home: React.FC = () => {
-    return (
-        <>
-            <Navbar loginPage />
-        </>
-    );
+  return (
+    <>
+      <Navbar loginPage />
+    </>
+  );
 };
 
 export default Home;
